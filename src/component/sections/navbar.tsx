@@ -1,14 +1,15 @@
 "use client";
 import Link from "next/link";
-import { FaShieldAlt } from "react-icons/fa";
 import { useState } from "react";
 
 const navLinks = [
-  { href: "#services", label: "Services" },
-  { href: "#company", label: "About" },
-  { href: "#testimonials", label: "Testimonials" },
-  { href: "#careers", label: "Careers" },
-  { href: "#contact", label: "Contact" },
+  { href: "/services", label: "Services" },
+  { href: "/about", label: "About" },
+  { href: "/testimonials", label: "Testimonials" },
+  { href: "/career", label: "Careers" },
+  { href: "/blog", label: "Blog" },
+  { href: "/team", label: "Team" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -40,7 +41,7 @@ export default function Navbar() {
           ))}
         </div>
         <Link
-          href="#contact"
+          href="/contact"
           className="ml-2 md:ml-4 px-4 md:px-5 py-2 rounded-full bg-gradient-to-r from-blue-700 to-blue-400 text-white font-semibold shadow hover:scale-105 hover:shadow-xl transition-all hidden md:inline-block"
         >
           Get Quote
@@ -78,7 +79,7 @@ export default function Navbar() {
             </Link>
           ))}
           <Link
-            href="#contact"
+            href="/contact"
             className="px-8 py-3 rounded-full bg-gradient-to-r from-blue-700 to-blue-400 text-white font-semibold shadow hover:scale-105 hover:shadow-xl transition-all"
             onClick={() => setMenuOpen(false)}
           >
