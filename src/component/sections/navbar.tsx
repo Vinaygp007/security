@@ -18,9 +18,13 @@ export default function Navbar() {
     <nav className="w-full fixed top-0 left-0 z-50 animate-section-in">
       <div className="w-full px-4 py-3 flex items-center justify-between bg-gradient-to-r from-black/80 via-blue-900/80 to-gray-900/80 backdrop-blur-xl rounded-b-2xl shadow-2xl border-b border-blue-900">
         <Link href="/" className="flex items-center gap-2 group">
-          <FaShieldAlt className="text-blue-400 text-2xl md:text-3xl group-hover:animate-bounce transition-all" />
+          <img
+            src="/logo.png"
+            alt="Shieldsnap Security Logo"
+            className="h-10 w-10 rounded-full shadow-lg"
+          />
           <span className="text-xl md:text-2xl font-extrabold tracking-tight bg-gradient-to-r from-blue-400 via-blue-600 to-blue-400 bg-clip-text text-transparent animate-gradient-x">
-            SecureGuard
+            Shieldsnap Security
           </span>
         </Link>
         <div className="hidden md:flex gap-4 md:gap-8 text-base md:text-lg font-medium">
