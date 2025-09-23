@@ -9,7 +9,6 @@ const navLinks = [
 	{ href: "/career", label: "Careers" },
 	{ href: "/blog", label: "Blog" },
 	{ href: "/team", label: "Team" },
-	{ href: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {
