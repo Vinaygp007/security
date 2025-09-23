@@ -7,12 +7,12 @@ export default function Footer() {
       <div className="max-w-5xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
         {/* Company Info */}
         <div className="flex flex-col items-center md:items-start gap-2">
-          <span className="text-2xl font-extrabold text-blue-400 mb-2">SecureGuard India</span>
+          <span className="text-2xl font-extrabold text-blue-400 mb-2">ShieldSnap India</span>
           <span className="flex items-center gap-2 text-sm text-gray-300">
             <FaMapMarkerAlt /> Mumbai, India
           </span>
           <span className="flex items-center gap-2 text-sm text-gray-300">
-            <FaEnvelope /> info@secureguard.in
+            <FaEnvelope /> info@shieldsnap.in
           </span>
           <span className="flex items-center gap-2 text-sm text-gray-300">
             <FaPhoneAlt /> +91 98765 43210
@@ -26,7 +26,10 @@ export default function Footer() {
         </div>
       </div>
       <div className="mt-8 text-center text-xs text-gray-400">
-        © {new Date().getFullYear()} SecureGuard India. All rights reserved.
+        © {new Date().getFullYear()} ShieldSnap India. All rights reserved.
+      </div>
+      <div className="text-center text-blue-200 font-bold">
+        Shieldsnap Security
       </div>
     </footer>
   );

@@ -23,7 +23,7 @@ export default function HeroSection() {
       {/* Main card */}
       <div className="relative z-20 bg-black/70 backdrop-blur-2xl rounded-3xl shadow-2xl px-10 py-14 flex flex-col items-center max-w-2xl mx-auto border border-blue-500/30 animate-section-in">
         <h1 className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 animate-gradient-x mb-6 drop-shadow-xl">
-          Welcome to SecureGuard
+          Welcome to ShieldSnap
         </h1>
         <p className="text-lg md:text-2xl text-gray-200 mb-8 text-center animate-fade-in">
           <span className="font-bold text-blue-400">India’s #1 Security Partner</span> <br />

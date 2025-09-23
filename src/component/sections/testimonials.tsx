@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 const testimonials = [
 	{
 		name: "Priya S., Mumbai",
-		text: "SecureGuard’s team is professional and reliable. Highly recommended!",
+		text: "ShieldSnap’s team is professional and reliable. Highly recommended!",
 		color: "border-pink-500",
 	},
 	{
@@ -14,7 +14,7 @@ const testimonials = [
 	},
 	{
 		name: "Amit K., Bangalore",
-		text: "SecureGuard keeps our business safe 24/7. True professionals.",
+		text: "ShieldSnap keeps our business safe 24/7. True professionals.",
 		color: "border-green-400",
 	},
 ];
