@@ -1,4 +1,6 @@
 "use client";
+import Link from "next/link";
+
 const jobs = [
 	{ title: "Security Guard", color: "bg-blue-100 text-blue-900" },
 	{ title: "Supervisor", color: "bg-yellow-100 text-yellow-700" },
@@ -20,12 +22,13 @@ export default function Careers() {
 			</p>
 			<div className="flex flex-wrap gap-3 md:gap-4 justify-center w-full">
 				{jobs.map((job) => (
-					<span
+					<Link
 						key={job.title}
-						className={`px-4 py-2 rounded-full font-semibold text-xs md:text-base ${job.color} animate-fade-in`}
+						href="/career"
+						className={`px-4 py-2 rounded-full font-semibold text-xs md:text-base ${job.color} animate-fade-in cursor-pointer hover:scale-105 hover:shadow-lg transition-all duration-200`}
 					>
 						{job.title}
-					</span>
+					</Link>
 				))}
 			</div>
 		</section>
