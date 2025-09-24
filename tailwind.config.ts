@@ -8,6 +8,8 @@ const config: Config = {
         'gradient-x': 'gradient-x 3s ease-in-out infinite',
         'spin-slow': 'spin-slow 10s linear infinite',
         'fade-in': 'fadeIn 1.5s ease-in',
+        'glow': 'glow 2s linear infinite',
+        'glow-border': 'glow-border 1.5s ease-in-out infinite',
       },
       keyframes: {
         fadeInUp: {
@@ -26,6 +28,15 @@ const config: Config = {
         fadeIn: {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
+        },
+        glow: {
+          "0%": { filter: "blur(8px) brightness(1.1)" },
+          "50%": { filter: "blur(12px) brightness(1.5)" },
+          "100%": { filter: "blur(8px) brightness(1.1)" },
+        },
+        'glow-border': {
+          '0%, 100%': { boxShadow: '0 0 16px 4px #60a5fa, 0 0 32px 8px #2563eb' },
+          '50%': { boxShadow: '0 0 32px 8px #60a5fa, 0 0 64px 16px #2563eb' },
         },
       },
     },
