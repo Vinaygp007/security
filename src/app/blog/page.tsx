@@ -39,7 +39,7 @@ export default function BlogPage() {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen bg-gradient-to-br from-blue-900 via-gray-900 to-blue-800 py-12 px-4 mt-16">
+      <main className="min-h-screen bg-gradient-to-br from-blue-900 via-gray-900 to-blue-800 py-12 px-4 ">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-extrabold text-blue-400 mb-8 text-center">Security Blog</h1>
           <div className="mb-8 flex justify-center">

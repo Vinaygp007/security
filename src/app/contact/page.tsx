@@ -32,7 +32,7 @@ export default function ContactPage() {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen bg-gradient-to-br from-blue-900 via-gray-900 to-blue-800 py-12 px-4 mt-16">
+      <main className="min-h-screen bg-gradient-to-br from-blue-900 via-gray-900 to-blue-800 py-12 px-4 ">
         <div className="max-w-4xl mx-auto bg-white/10 backdrop-blur-xl rounded-3xl shadow-2xl p-8 md:p-12">
           <h1 className="text-4xl md:text-5xl font-extrabold text-blue-400 mb-8 text-center">Contact Us</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

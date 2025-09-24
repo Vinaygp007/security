@@ -36,7 +36,7 @@ export default function TestimonialsPage() {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen bg-gradient-to-br from-blue-900 via-gray-900 to-blue-800 py-12 px-4 flex items-center justify-center mt-16">
+      <main className="min-h-screen bg-gradient-to-br from-blue-900 via-gray-900 to-blue-800 py-12 px-4 flex items-center justify-center">
         <div className="max-w-xl w-full mx-auto">
           <h1 className="text-4xl md:text-5xl font-extrabold text-blue-400 mb-8 text-center">Client Testimonials</h1>
           <div className="relative">

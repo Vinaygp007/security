@@ -44,7 +44,7 @@ export default function AboutUs() {
   return (
     <>
       <Navbar />
-      <main className="bg-gradient-to-br mt-16 from-blue-900 via-gray-900 to-blue-800 min-h-screen py-12 px-4">
+      <main className="bg-gradient-to-br  from-blue-900 via-gray-900 to-blue-800 min-h-screen py-12 px-4">
         <div className="max-w-4xl mx-auto bg-white/10 backdrop-blur-xl rounded-3xl shadow-2xl p-8 md:p-12">
           {/* Company History */}
           <section className="mb-10">
@@ -78,23 +78,7 @@ export default function AboutUs() {
               </li>
             </ul>
           </section>
-          {/* Team Profiles */}
-          <section className="mb-10">
-            <h2 className="text-2xl font-bold text-blue-300 mb-4">Meet Our Team</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {team.map((member) => (
-                <div key={member.name} className="flex flex-col items-center bg-blue-900/40 rounded-xl p-4 shadow animate-section-in">
-                  <img
-                    src={member.photo}
-                    alt={member.name}
-                    className="h-24 w-24 rounded-full object-cover mb-3 border-4 border-blue-400 shadow-lg"
-                  />
-                  <span className="font-bold text-lg text-blue-200">{member.name}</span>
-                  <span className="text-sm text-gray-300">{member.role}</span>
-                </div>
-              ))}
-            </div>
-          </section>
+          {/* Team Profiles section removed to avoid duplication with Team page */}
           {/* Certifications & Awards */}
           <section className="mb-10">
             <h2 className="text-2xl font-bold text-blue-300 mb-4">Certifications & Awards</h2>

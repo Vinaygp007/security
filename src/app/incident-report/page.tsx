@@ -82,7 +82,7 @@ export default function IncidentReportPage() {
   return (
     <>
       <Navbar />
-      <div className="min-h-screen mt-16 flex flex-col items-center justify-center bg-gradient-to-br from-blue-900 via-black to-gray-900 px-4 py-16 animate-fade-in">
+      <div className="min-h-screen  flex flex-col items-center justify-center bg-gradient-to-br from-blue-900 via-black to-gray-900 px-4 py-16 animate-fade-in">
         <div className="max-w-lg w-full bg-white/10 backdrop-blur-xl rounded-2xl shadow-2xl p-8 border border-blue-900">
           <h1 className="text-3xl font-extrabold text-blue-400 mb-4 text-center">Report a Security Incident</h1>
           <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
