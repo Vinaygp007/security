@@ -1,13 +1,8 @@
-
-import Navbar from "../../component/sections/navbar";
-import Footer from "../../component/sections/footer";
 import { FaDownload } from "react-icons/fa";
 
 
 export default function BrochurePage() {
   return (
-    <>
-      <Navbar />
       <section className="w-full flex flex-col items-center justify-center py-12 animate-fade-in">
         <div className="bg-gradient-to-br from-blue-900 via-black to-gray-900/80 rounded-3xl shadow-2xl p-8 border-t-4 border-blue-400 flex flex-col items-center max-w-xl w-full">
           <h2 className="text-2xl md:text-3xl font-extrabold text-blue-400 mb-4 text-center">
@@ -25,7 +20,5 @@ export default function BrochurePage() {
           </a>
         </div>
       </section>
-      <Footer />
-    </>
   );
 }
