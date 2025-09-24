@@ -46,10 +46,10 @@ export default function Navbar() {
 						</Link>
 					))}
 				</div>
-				{/* Book Consultation Button (inline, visually integrated) */}
+				{/* Book Consultation Button (desktop only) */}
 				<Link
 					href="/contact"
-					className="ml-6 px-6 py-2 rounded-full bg-gradient-to-r from-blue-600 to-blue-400 text-white font-bold shadow-md hover:scale-105 hover:shadow-xl transition-all border border-blue-200/30 backdrop-blur-xl animate-fade-in"
+					className="ml-6 px-6 py-2 rounded-full bg-gradient-to-r from-blue-600 to-blue-400 text-white font-bold shadow-md hover:scale-105 hover:shadow-xl transition-all border border-blue-200/30 backdrop-blur-xl animate-fade-in hidden md:inline-block"
 					style={{ position: 'relative', top: 0, right: 0 }}
 				>
 					Book Consultation
@@ -93,12 +93,13 @@ export default function Navbar() {
 							{link.label}
 						</Link>
 					))}
+					{/* Book Consultation Button (mobile menu only) */}
 					<Link
 						href="/contact"
 						className="px-8 py-3 rounded-full bg-gradient-to-r from-blue-700 to-blue-400 text-white font-semibold shadow hover:scale-105 hover:shadow-xl transition-all"
 						onClick={() => setMenuOpen(false)}
 					>
-						Get Quote
+						Book Consultation
 					</Link>
 				</div>
 			)}
