@@ -2,6 +2,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
+import { MdReport } from "react-icons/md";
 
 const navLinks = [
 	{ href: "/services", label: "Services" },
@@ -10,11 +12,11 @@ const navLinks = [
 	{ href: "/career", label: "Careers" },
 	{ href: "/blog", label: "Blog" },
 	{ href: "/team", label: "Team" },
-	{ href: "/incident-report", label: "Incident Report" },
 ];
 
 export default function Navbar() {
 	const [menuOpen, setMenuOpen] = useState(false);
+	const pathname = usePathname();
 
 	return (
 		<nav className="w-full fixed top-0 left-0 z-50 animate-section-in">
@@ -101,15 +103,17 @@ export default function Navbar() {
 				</div>
 			)}
 
-		{/* Floating Report Incident Button */}
-		<Link
-			href="/incident-report"
-			className="fixed bottom-8 right-8 z-[60] px-5 py-2 rounded-full bg-gradient-to-r from-red-600 to-orange-400 text-white font-bold shadow-lg border border-white/20 backdrop-blur-xl animate-fade-in hover:scale-105 hover:shadow-xl transition-all flex items-center gap-2"
-			style={{ boxShadow: '0 4px 16px 0 rgba(255, 87, 34, 0.18)' }}
-		>
-			<span className="material-icons">report_problem</span>
-			Report Incident
-		</Link>
+		{/* Floating Report Problem Button (hide on /incident-report) */}
+		{pathname !== "/incident-report" && (
+			<Link
+				href="/incident-report"
+				className="fixed bottom-8 right-8 z-[60] px-6 py-3 rounded-full bg-gradient-to-r from-red-500 via-orange-400 to-yellow-300 text-white font-semibold shadow-xl border border-white/20 backdrop-blur-xl animate-fade-in hover:scale-105 hover:shadow-2xl transition-all flex items-center gap-2 text-base md:text-lg"
+				style={{ boxShadow: '0 6px 24px 0 rgba(255, 87, 34, 0.18)' }}
+			>
+				<MdReport className="text-2xl md:text-3xl text-white drop-shadow" />
+				<span className="font-bold tracking-wide">Report Problem</span>
+			</Link>
+		)}
 		</nav>
 	);
 }
